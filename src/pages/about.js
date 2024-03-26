@@ -7,7 +7,7 @@ import Layout from '../components/layout'
 const AboutPage = () => {
   return (
     <main>
-      <Layout pageTitle="About the Club 🌴🏔️🏙️">
+      <Layout pageTitle="About the Club">
         <p>Welcome to Travel Ideas Club, a micro-site for sharing trip ideas and itineraries among friends.</p>
         <p>All it takes to join the club is to either add an itinerary of your own, or follow one!</p>
       </Layout>

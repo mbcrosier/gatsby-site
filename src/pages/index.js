@@ -11,7 +11,7 @@ import {
 const IndexPage = () => {
   return (
     <main>
-      <Layout pageTitle="🏙️🏔️🌴Travel Ideas Club 🌴🏔️🏙️">
+      <Layout pageTitle="Home">
         <p>Welcome to Travel Ideas Club, a micro-site for sharing trip ideas and itineraries among friends.</p>
         <StaticImage
         className={staticImage}

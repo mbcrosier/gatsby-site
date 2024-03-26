@@ -3,9 +3,19 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `MB's Gatsby Blog`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `🏙️🏔️🌴 Travel Ideas Club 🌴🏔️🏙️`,
+    siteUrl: `https://www.yourdomain.tld`,
+    description: `A small site to share travel ideas`
   },
   plugins: ["gatsby-plugin-sitemap", "gatsby-plugin-image",
-    "gatsby-plugin-sharp",]
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `ideas`,
+        path: `${__dirname}/ideas`,
+      }
+    },
+  
+  ]
 };
