@@ -15,7 +15,7 @@ const IdeaPage = ({ data }) => {
               </Link>
             </h2>
             <p>Posted: {node.frontmatter.date}</p>
-            <p>{node.excerpt}</p>
+            <p>{node.frontmatter.excerpt}</p>
           </article>
         ))
       }
@@ -31,9 +31,9 @@ export const query = graphql`
           date(formatString: "MMMM D, YYYY")
           title
           slug
+          excerpt
         }
         id
-        excerpt
       }
     }
   }
