@@ -6,5 +6,6 @@ module.exports = {
     title: `MB's Gatsby Blog`,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-sitemap"]
+  plugins: ["gatsby-plugin-sitemap", "gatsby-plugin-image",
+    "gatsby-plugin-sharp",]
 };

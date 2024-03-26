@@ -7,8 +7,9 @@ import Layout from '../components/layout'
 const AboutPage = () => {
   return (
     <main>
-      <Layout pageTitle="🏙️🏔️🌴Travel Ideas Club 🌴🏔️🏙️">
+      <Layout pageTitle="About the Club 🌴🏔️🏙️">
         <p>Welcome to Travel Ideas Club, a micro-site for sharing trip ideas and itineraries among friends.</p>
+        <p>All it takes to join the club is to either add an itinerary of your own, or follow one!</p>
       </Layout>
     </main>
   )
@@ -17,7 +18,7 @@ const AboutPage = () => {
 export const Head = () => (
     <>
       <title>Travel Ideas Club | About</title>
-      <meta name="description" content="Learn about Travel Ideas Club,  micro-site for sharing trip ideas and itineraries among friends." />
+      <meta name="description" content="Learn about Travel Ideas Club, a micro-site for sharing trip ideas and itineraries among friends." />
     </>
   )
 
