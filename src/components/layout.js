@@ -8,6 +8,7 @@ import {
     staticImage,
     siteTitle
 } from './layout.module.css'
+import '../styles/global.css'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 
 const Layout = ({ pageTitle, children }) => {
