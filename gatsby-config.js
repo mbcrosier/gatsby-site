@@ -18,27 +18,33 @@ module.exports = {
     },
     "gatsby-plugin-mdx",
     `gatsby-plugin-sharp`,
-  {
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [
-        {
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-autolink-headers`, {
           resolve: `gatsby-remark-images`,
           options: {
             // It's important to specify the maxWidth (in pixels) of
             // the content container as this plugin uses this as the
             // base for generating different widths of each image.
             maxWidth: 590,
+            path: `${__dirname}/ideas`,
           },
-        },
-      ],
+        },],
+      },
     },
-  },
-  {
-    resolve: `gatsby-transformer-remark`,
-    options: {
-      plugins: [`gatsby-remark-autolink-headers`],
+    {
+      resolve: `gatsby-omni-font-loader`,
+      options: {
+        enableListener: true,
+        preconnect: [`https://fonts.googleapis.com`, `https://fonts.gstatic.com`],
+        web: [
+          {
+            name: `Open Sans`,
+            file: `https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap`,
+          },
+        ],
+      },
     },
-  },
   ]
 };

@@ -6,7 +6,7 @@ import { graphql } from 'gatsby'
 const IdeaPost = ({ data, children }) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}</p>
+      <p>Published {data.mdx.frontmatter.date} by: {data.mdx.frontmatter.contributor}</p>
       {children}
     </Layout>
   )
@@ -18,6 +18,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
+        contributor
       }
     }
   }
