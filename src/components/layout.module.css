@@ -12,14 +12,22 @@
     display: flex;
     list-style: none;
     padding-left: 0;
+    text-align: center;
 }
 
 .nav-link-item {
     padding-right: 2rem;
+    text-align: center;
 }
+
+
+.nav-link-item:hover {
+    background-color: #52796f;
+  }
 
 .nav-link-text {
     color: #354f52;
+    text-align: center;
 }
 
 .static-image{
