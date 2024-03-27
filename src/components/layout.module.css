@@ -4,7 +4,8 @@
 }
 
 .heading {
-    color: gray;
+    color: #2f3e46;
+    font-weight: 200;
 }
 
 .nav-links {
@@ -18,7 +19,7 @@
 }
 
 .nav-link-text {
-    color: black;
+    color: #354f52;
 }
 
 .static-image{
@@ -26,8 +27,9 @@
 }
 
 .site-title {
-    font-size: 2rem;
-    color: rebeccapurple;
+    font-size: 40px;
+    color: #2f3e46;
     font-weight: 700;
     margin: 2rem 0;
+    text-align: center;
   }

@@ -1,11 +1,11 @@
 import * as React from 'react'
-import Layout from '../../components/layout'
+import Layout  from '../../components/layout'
 import Seo from '../../components/seo'
 import { Link, graphql } from 'gatsby'
 
 const IdeaPage = ({ data }) => {
   return (
-    <Layout pageTitle="Travel Ideas">
+    <Layout pageTitle="Travel Ideas & Itineraries">
       {
         data.allMdx.nodes.map((node) => (
           <article key={node.id}>
@@ -14,8 +14,9 @@ const IdeaPage = ({ data }) => {
                 {node.frontmatter.title}
               </Link>
             </h2>
-            <p>Posted: {node.frontmatter.date}</p>
+            <p>Posted: {node.frontmatter.date} by {node.frontmatter.contributor}</p> 
             <p>{node.frontmatter.excerpt}</p>
+            <br></br>
           </article>
         ))
       }
@@ -32,6 +33,7 @@ export const query = graphql`
           title
           slug
           excerpt
+          contributor
         }
         id
       }

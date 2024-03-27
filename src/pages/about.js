@@ -2,6 +2,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import Seo from '../components/seo'
 
 // Step 2: Define your component
 const AboutPage = () => {
@@ -17,7 +18,7 @@ const AboutPage = () => {
 
 export const Head = () => (
     <>
-      <title>Travel Ideas Club | About</title>
+      <Seo title="About" />
       <meta name="description" content="Learn about Travel Ideas Club, a micro-site for sharing trip ideas and itineraries among friends." />
     </>
   )
