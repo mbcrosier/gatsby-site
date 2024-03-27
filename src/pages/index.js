@@ -22,7 +22,7 @@ const IndexPage = () => {
         <StaticImage 
         className={staticImage}
         alt="Mountain view looking out over the Grand Tetons from Jackson Hole"
-        src="../images/mountain-scene.jpg"
+        src="../images/mountain-view.jpg"
       />
         <StaticImage
         className={staticImage}
